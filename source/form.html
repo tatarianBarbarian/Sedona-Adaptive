@@ -18,42 +18,43 @@
         </nav>
         <button class="open-menu"><span class="visually-hidden">Открыть меню</span></button>
     </header>
-</body>
     <main class="container">
         <header class="secondary"></header>
         <section class="intro">
-            <h1 class="first-heading">Оставьте свой отзыв</h1>
-            <p class="paragraph">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещённых вами достопримечательностях</p>
+           <div class="heading-paragraph">
+                <h1 class="heading-paragraph__heading">Оставьте свой отзыв</h1>
+                <p class="heading-paragraph__paragraph">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещённых вами достопримечательностях</p>
+            </div>
         </section>
-        <section class="???">
+        <section class="feedback-form">
             <form action="https://echo.htmlacademy.ru" class="form" method="post">
                 <div class="form__wrapper">
-                    <fieldset class="form__data form__name">
+                    <fieldset class="form__fieldset">
                         <legend class="form__legend">Представьтесь:</legend>
-                        <label for="name">Имя*</label>
+                        <label for="name" class="form__label">Имя*</label>
                         <input class="form__input-text" type="text" name="name" id="name" placeholder="Петр" required><br>
-                        <label for="secondName">Фамилия*</label>
+                        <label for="secondName" class="form__label">Фамилия*</label>
                         <input class="form__input-text" type="text" name="secondName" id="secondName" placeholder="Иванов" required><br>
-                        <label for="thirdName">Отчество</label>
+                        <label for="thirdName" class="form__label">Отчество</label>
                         <input class="form__input-text" type="text" name="thirdName" id="thirdName" placeholder="Александрович">
                     </fieldset>
-                    <fieldset class="form__data form__contact">
+                    <fieldset class="form__fieldset">
                         <legend class="form__legend">Контактная информация</legend>
                         <label for="phone" class="form__label">Контактный телефон*:</label>
                         <input type="tel" name="phone" id="phone" class="form__input-text" placeholder="Введите телефон" required>
                         <label for="email" class="form__label">Электронная почта*:</label>
                         <input type="email" name="email" id="email" class="form__input-text" placeholder="Введите e-mail" required>
                     </fieldset>
-                    <fieldset class="form__impression">
+                    <fieldset class="form__fieldset">
                         <legend class="form__legend">Ваше общее впечатление:</legend>
                         <input type="radio" name="impression" id="positive" value="positive" class="form__input-radio" checked>
-                        <label for="good" class="form__label">Скорее положительное</label>
+                        <label for="positive" class="form__label">Скорее положительное</label>
                         <input type="radio" name="impression" id="negative" value="negative" class="form__input-radio">
                         <label for="negative" class="form__label">Скорее отрицательное</label>
                         <input type="radio" name="impression" id="neutral" value="neutral" class="form__input-radio">
                         <label for="neutral" class="form__label">Затрудняюсь ответить</label>
                     </fieldset>
-                    <fieldset class="form__attraction">
+                    <fieldset class="form__fieldset">
                         <legend class="form__legend">Посещённые достопримечательности:</legend>
                        <div class="input__wrapper">
                        <input type="checkbox" name="Bridge" id="DevilBridge" class="form__input-checkbox" checked>
@@ -76,13 +77,16 @@
                         <legend class="form__legend">Опишите свои эмоции:</legend>
                         <textarea placeholder="Опишите подробно все свои восторги"></textarea>
                     </fieldset>
-                    <button type="submit" class="button">Отправить отзыв</button>
+                    <div class="button-text">
+                        <button type="submit" class="button">Отправить отзыв</button>
+                        <paragraph class="hint">-* Обязательные поля</paragraph>
+                    </div>
                 </div>
             </form>
         </section>
     </main>
     <footer class="container">
-        <h1 class="first-heading">#VISITSEDONA</h1>
+        <b class="hashtag">#VISITSEDONA</b>
         <h1 class="visually-hidden">Подписывайтесь на нас в социальных сетях:</h1>
         <div class="socials">
             <a href="#" class="socials__item socials__item--twitter"><span class="visually-hidden">Твиттер</span></a>
@@ -91,13 +95,18 @@
         </div>
     </footer>
     <section class="popup-success">
-        <h1 class="first-heading">Ваш вызов отправлен!</h1>
-        <p class="paragraph">Спасибо за участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
+       <div class="heading-paragraph">
+            <h1 class="heading-paragraph__heading">Ваш вызов отправлен!</h1>
+            <p class="heading-paragraph__paragraph">Спасибо за участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
+        </div>
         <button class="button">Закрыть окно</button>
     </section>
     <section class="popup-failure">
-        <h1>Что-то пошло не так!</h1>
-        <p class="paragraph">Проверьте поля, выделенные красным, скорее всего, вы забыли их заполнить</p>
+       <div class="heading-paragraph">
+            <h1 class="heading-paragraph__heading">Что-то пошло не так!</h1>
+            <p class="heading-paragraph__paragraph">Проверьте поля, выделенные красным, скорее всего, вы забыли их заполнить</p>
+        </div>
         <button class="buttton">Ok</button>
     </section>
+    </body>
 </html>
