@@ -2,22 +2,26 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Sedona - главная</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header class="container">
-       <img src="" alt="лого" class="logo-image">
+    <header class="main-header container">
         <nav class="main-nav">
-           <button class="close-menu"><span class="visually-hidden">Закрыть меню</span></button>
+           <button class="main-nav__close-menu"><span class="visually-hidden">Закрыть меню</span></button>
             <ul class="main-nav__list">
                 <li class="main-nav__list-item"><a href="#" class="main-nav__menu-link">Главная</a></li>
                 <li class="main-nav__list-item"><a href="#" class="main-nav__menu-link">Фото и видео</a></li>
+                <li class="main-nav__list-item pc-logo"></li>
                 <li class="main-nav__list-item"><a href="#" class="main-nav__menu-link">Форма отзыва</a></li>
                 <li class="main-nav__list-item"><a href="#" class="main-nav__menu-link">HTML Academy</a></li>
             </ul>
         </nav>
-        <button class="open-menu"><span class="visually-hidden">Открыть меню</span></button>
+        <div class="main-header__button-logo-wrapper">
+               <img src="img/svg/logotyle-mobile.png" alt="мобильное лого" class="mobile-logo">
+            <button class="main-header__open-menu"><span class="visually-hidden">Открыть меню</span></button>
+        </div>
     </header>
     <main class="container">
         <header class="greeting"></header>

@@ -1,7 +1,9 @@
 @import 'normalize';
 @import 'fonts';
+@import 'scaffolding';
 @import 'mixins';
 @import 'variables';
+@import 'blocks/main-header.scss';
 @import 'blocks/advantage-pic';
 @import 'blocks/button';
 @import 'blocks/close-menu';

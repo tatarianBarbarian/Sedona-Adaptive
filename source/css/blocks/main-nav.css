@@ -1,11 +1,23 @@
 .main-nav__list {
   display: flex;
   list-style: none;
-  flex-direction: column; }
+  flex-direction: column;
+  margin: 0;
+  padding: 0; }
+
+.main-nav__list-item {
+  text-align: center; }
 
 .main-nav__menu-link {
-  font-family: 'PT Sans', sans-serif;
   text-align: center;
   font-size: 18px;
   font-weight: bold;
-  text-decoration: none; }
+  text-decoration: none;
+  display: block;
+  padding: 15px 0;
+  color: white;
+  background: #81b3d2;
+  border-bottom: 1px solid #678fa8; }
+
+.pc-logo {
+  display: none; }

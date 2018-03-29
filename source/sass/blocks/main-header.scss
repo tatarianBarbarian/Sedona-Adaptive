@@ -1,0 +1,19 @@
+.main-header__button-logo-wrapper {
+    position: relative;
+    display: flex;
+}
+
+.mobile-logo {
+    position: absolute;
+    right: 35%;
+}
+
+.main-header__open-menu {
+    border: none;
+//    background: url(../../img/svg/icon-menu.svg) no-repeat;
+    width: 25px;
+    height: 25px;
+    margin-left: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
