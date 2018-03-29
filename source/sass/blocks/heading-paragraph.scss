@@ -1,0 +1,19 @@
+.heading-paragraph {
+    font-family: 'PT Sans', sans-serif;
+    text-align: center;
+}
+
+.heading-paragraph__heading {
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.heading-paragraph__paragraph {
+    font-size: 14px;
+    line-height: 26px;
+}
+
+.heading-paragraph--white {
+    color: white;
+}

@@ -1,0 +1,11 @@
+.main-nav__list {
+  display: flex;
+  list-style: none;
+  flex-direction: column; }
+
+.main-nav__menu-link {
+  font-family: 'PT Sans', sans-serif;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none; }
