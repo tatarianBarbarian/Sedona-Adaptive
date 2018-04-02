@@ -9,13 +9,28 @@
 <body>
     <header class="main-header container">
         <nav class="main-nav">
-           <button class="main-nav__close-menu"><span class="visually-hidden">Закрыть меню</span></button>
             <ul class="main-nav__list">
-                <li class="main-nav__list-item"><a href="#" class="main-nav__menu-link">Главная</a></li>
-                <li class="main-nav__list-item"><a href="#" class="main-nav__menu-link">Фото и видео</a></li>
-                <li class="main-nav__list-item pc-logo"></li>
-                <li class="main-nav__list-item"><a href="#" class="main-nav__menu-link">Форма отзыва</a></li>
-                <li class="main-nav__list-item"><a href="#" class="main-nav__menu-link">HTML Academy</a></li>
+               <div class="main-nav__list-item-wrapper main-nav__list-item-wrapper--left">
+                   <li class="main-nav__list-item">
+                       <a href="#" class="main-nav__menu-link">Главная</a>
+                       <button class="main-nav__close-menu"><span class="visually-hidden">Закрыть меню</span></button>
+                   </li>
+                    <li class="main-nav__list-item">
+                        <a href="#" class="main-nav__menu-link">Фото и видео</a>
+                    </li>
+               </div>
+                <li class="main-nav__list-item pc-logo">
+                    </li>
+                <div class="main-nav__list-item-wrapper">
+                    
+                    <li class="main-nav__list-item">
+                    <a href="#" class="main-nav__menu-link">Форма отзыва</a>
+                    </li>
+                    <li class="main-nav__list-item">
+                    <a href="#" class="main-nav__menu-link">HTML Academy</a>
+                    </li>
+                </div>    
+                
             </ul>
         </nav>
         <div class="main-header__button-logo-wrapper">
@@ -26,16 +41,16 @@
     <main class="container">
         <header class="greeting"></header>
         <section class="intro">
-           <div class="heading-paragraph">
+           <div class="heading-paragraph heading-paragraph--intro">
                 <h1 class="heading-paragraph__heading">Седона - небольшой городок в Аризоне, заслуживающий большего!</h1>
-                <p class="heading-paragraph__paragraph">Рассмотрим 5 причин, по которым седона круче, чем гранд каньон!</p>
+                <p class="heading-paragraph__paragraph heading-paragraph__paragraph--long">Рассмотрим 5 причин, по которым седона круче, чем гранд каньон!</p>
             </div>
         </section>
         <section class="advantages">
             <div class="advantage-pic advantage-pic--blue-bg">
                 <div class="advantage-pic__text">
                    <div class="heading-paragraph heading-paragraph--white">
-                        <h1 class="heading-paragraph__heading">Настоящий <br>городок</h1>
+                        <h1 class="heading-paragraph__heading">Настоящий городок</h1>
                         <p class="heading-paragraph__paragraph">- №1 -</p>
                         <p class="heading-paragraph__paragraph">Седона - не аттракцион для туристов, там течёт своя жизнь</p>
                     </div>
@@ -46,19 +61,19 @@
             </div>
             <div class="features">
                 <div class="feature-item feature-item--home">
-                   <div class="heading-paragraph">
+                   <div class="heading-paragraph heading-paragraph--features">
                         <h1 class="heading-paragraph__heading">Жилье</h1>
                         <p class="heading-paragraph__paragraph">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
                     </div>
                 </div>
                 <div class="feature-item feature-item--food">
-                   <div class="heading-paragraph">
+                   <div class="heading-paragraph heading-paragraph--features">
                         <h1 class="heading-paragraph__heading">Еда</h1>
                         <p class="heading-paragraph__paragraph">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
                     </div>
                 </div>
                 <div class="feature-item feature-item--souvenir">
-                   <div class="heading-paragraph">
+                   <div class="heading-paragraph heading-paragraph--features">
                         <h1 class="heading-paragraph__heading">Сувениры</h1>
                         <p class="heading-paragraph__paragraph">Не только китайского, но и местного производства!</p>
                     </div>
@@ -67,7 +82,7 @@
             <div class="advantage-pic advantage-pic--reverse advantage-pic--blue-bg">
                 <div class="advantage-pic__text">
                    <div class="heading-paragraph heading-paragraph--white">
-                        <h1 class="heading-paragraph__heading">Там есть<br> мост дьявола</h1>
+                        <h1 class="heading-paragraph__heading">Там есть мост дьявола</h1>
                         <p class="heading-paragraph__paragraph">- №2 -</p>
                         <p class="heading-paragraph__paragraph">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
                     </div>
@@ -103,7 +118,7 @@
         <section class="find-hotel">
            <div class="heading-paragraph">
                 <h1 class="heading-paragraph__heading heading-paragraph__heading--big-heading">Заинтересовались?</h1>
-                <p class="heading-paragraph__paragraph">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+                <p class="heading-paragraph__paragraph heading-paragraph__paragraph--long">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
             </div>
             <button class="button">Найти гостиницу</button>
         </section>
@@ -111,7 +126,7 @@
             <h1 class="visually-hidden">Здесь представлена карта, где можно посмотреть город.</h1>
         </section>
     </main>
-    <footer class="container">
+    <footer class="container main-footer">
         <b class="hashtag">#VISITSEDONA</b>
         <h1 class="visually-hidden">Подписывайтесь на нас в социальных сетях:</h1>
         <div class="socials">

@@ -3,6 +3,7 @@
   display: flex; }
 
 .mobile-logo {
+  display: block;
   position: absolute;
   right: 35%; }
 
@@ -13,3 +14,9 @@
   margin-left: auto;
   margin-top: 10px;
   margin-bottom: 10px; }
+
+@media only screen and (min-width: 768px) {
+  .main-header__button-logo-wrapper {
+    display: none; }
+  .main-header__open-menu {
+    display: none; } }

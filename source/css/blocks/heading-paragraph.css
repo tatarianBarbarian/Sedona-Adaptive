@@ -1,19 +1,36 @@
 .heading-paragraph {
   text-align: center;
   box-sizing: border-box;
-  padding: 0 10px; }
+  padding: 30px 10px; }
 
 .heading-paragraph__heading {
   font-size: 18px;
   line-height: 26px;
   font-weight: bold;
   text-transform: uppercase;
-  max-width: 300px;
+  max-width: 260px;
   margin: 0 auto; }
 
 .heading-paragraph__paragraph {
   font-size: 14px;
-  line-height: 26px; }
+  line-height: 21px;
+  text-transform: uppercase;
+  margin: 0; }
 
 .heading-paragraph--white {
   color: white; }
+
+.heading-paragraph--align-left {
+  text-align: left; }
+
+@media only screen and (min-width: 768px) {
+  .heading-paragraph__heading {
+    max-width: 445px; }
+  .heading-paragraph__paragraph {
+    max-width: 165px;
+    margin: 0 auto; }
+  .heading-paragraph--align-left {
+    text-align: center; }
+  .heading-paragraph__paragraph--long {
+    max-width: 80%;
+    margin: 35px auto; } }

@@ -1,2 +1,12 @@
+.advantage-pic {
+  display: flex;
+  flex-direction: column; }
+
 .advantage-pic--blue-bg {
   background: #81b3d2; }
+
+@media only screen and (min-width: 768px) {
+  .advantage-pic {
+    flex-direction: row; }
+  .advantage-pic--reverse {
+    flex-direction: row-reverse; } }

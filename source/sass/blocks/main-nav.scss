@@ -8,14 +8,21 @@
     padding: 0;
 }
 
+.main-nav__list-item-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
 .main-nav__list-item {
     text-align: center;
+    position: relative;
 }
 
 .main-nav__menu-link {
     text-align: center;
     font-size: 18px;
     font-weight: bold;
+    text-transform: uppercase;
     text-decoration: none;
     display: block;
     padding: 15px 0;
@@ -26,4 +33,44 @@
 
 .pc-logo {
     display: none;
+}
+
+@media only screen and (min-width: 768px) {
+    .main-nav__list {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .main-nav__close-menu {
+        display: none;
+    }
+    
+    .main-nav__list-item-wrapper {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .main-nav__list-item-wrapper--left {
+//        justify-content: space-around;
+        margin-left: 7%;
+    }
+    
+    .main-nav__list-item {
+        margin-right: 30px;
+    }
+    
+    .main-nav__menu-link {
+        background: none;
+        color: black;
+        border-bottom: none;
+        font-size: 14px;
+        padding: 20px 0;
+    }
+    
+    .pc-logo {
+        display: block;
+        width: 105px;
+        margin: 0;
+        background: black;
+    }
 }

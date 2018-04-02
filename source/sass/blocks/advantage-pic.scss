@@ -1,5 +1,20 @@
 @import '../variables.scss';
 
+.advantage-pic {
+    display: flex;
+    flex-direction: column;
+}
+
 .advantage-pic--blue-bg {
     background: $blue-button;
+}
+
+@media only screen and (min-width: 768px) {
+    .advantage-pic {
+        flex-direction: row;
+    }
+    
+    .advantage-pic--reverse {
+        flex-direction: row-reverse;
+    }
 }
