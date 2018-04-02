@@ -11,6 +11,9 @@
   max-width: 260px;
   margin: 0 auto; }
 
+.heading-paragraph__heading--big-heading {
+  font-size: 21px; }
+
 .heading-paragraph__paragraph {
   font-size: 14px;
   line-height: 21px;
@@ -23,14 +26,24 @@
 .heading-paragraph--align-left {
   text-align: left; }
 
+.tablet-break {
+  display: none; }
+
 @media only screen and (min-width: 768px) {
+  .heading-paragraph {
+    padding: 30px 50px; }
   .heading-paragraph__heading {
-    max-width: 445px; }
+    max-width: 445px;
+    font-size: 21px; }
+  .heading-paragraph__heading--big-heading {
+    font-size: 30px; }
   .heading-paragraph__paragraph {
     max-width: 165px;
-    margin: 0 auto; }
+    margin: 30px auto; }
   .heading-paragraph--align-left {
     text-align: center; }
   .heading-paragraph__paragraph--long {
     max-width: 80%;
-    margin: 35px auto; } }
+    margin: 30px auto; }
+  .tablet-break {
+    display: inline; } }

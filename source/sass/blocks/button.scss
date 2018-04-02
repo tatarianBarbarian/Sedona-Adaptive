@@ -1,5 +1,9 @@
 @import '../variables';
 
+.button__wrapper {
+    display: flex;
+}
+
 .button {
     text-transform: uppercase;
     font-size: 21px;
@@ -7,8 +11,17 @@
     color: white;
     border: none;
     background: $blue-button;
-    padding: 20px 2em;
-    cursor: pointer;
-    margin: 0 10px;
     text-align: center;
+    cursor: pointer;
+    margin: 0 auto;
+    padding: 1em 0;
+    width: 100%;
+}
+
+
+
+@media only screen and (min-width: 768px) {
+    .button {
+       width: 40%; 
+    }
 }
