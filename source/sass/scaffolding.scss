@@ -1,3 +1,5 @@
+@import 'variables';
+
 @import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=cyrillic');
 body {
     font-family: 'PT Sans', sans-serif;
@@ -7,7 +9,7 @@ img {
     max-width: 100%;
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: $desktop-width) {
     body {
         background: #f2f2f2;
     }

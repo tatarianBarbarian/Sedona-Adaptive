@@ -118,3 +118,14 @@
         }
     }
 }
+
+@media (min-width: $desktop-width) {
+    .main-nav {
+        max-width: 1200px;
+        background: white;
+    }
+    
+    .main-header {
+        background: none;
+    }
+}

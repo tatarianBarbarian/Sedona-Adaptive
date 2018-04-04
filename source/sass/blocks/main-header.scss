@@ -1,3 +1,5 @@
+@import '../variables';
+
 .main-header {
     display: flex;
     flex-direction: column;
@@ -106,5 +108,11 @@
     .logo-wraper {
         order: 2;
         width: 13.28125%;
+    }
+}
+
+@media (min-width: $desktop-width){
+    .logo-wraper {
+        width: 15.8333333333%;
     }
 }
