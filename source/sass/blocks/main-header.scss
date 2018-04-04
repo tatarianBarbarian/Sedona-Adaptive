@@ -1,32 +1,88 @@
-.main-header__button-logo-wrapper {
-    position: relative;
+.main-header {
     display: flex;
-}
-
-.mobile-logo {
-    display: block;
-    position: absolute;
-    right: 35%;
+    flex-direction: column;
+    background: white;
+    position: relative;
+    min-height: 56px;
 }
 
 .main-header__open-menu {
+    width: 23px;
+    height: 23px;
+    margin: 1em 0;
+    margin-right: 1em;
+    position: absolute;
+    right: 1em;
+    bottom: .3em;
+    align-self: flex-end;
+    background: none;
     border: none;
-//    background: url(../../img/svg/icon-menu.svg) no-repeat;
-    width: 25px;
-    height: 25px;
-    margin-left: auto;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    border-top: 5px solid $blue-button;
+    border-bottom: 5px solid $blue-button;
+    cursor: pointer;
+    
+    
+    &::before {
+        content: '';
+        position: absolute;
+        width: 23px;
+        height: 5px;
+        background: $blue-button;
+        left: 0;
+        top: 4px;
+    }
 }
 
-@media only screen and (min-width: 768px) {
+.main-header__close-menu {
+    position: absolute;
+    right: 1.6em;
+    top: 50%;
+    min-width: 24px;
+    min-height: 24px;
+    background: none;
+    border: none;
     
-    .main-header__button-logo-wrapper {
-        display: none;
+    &::before {
+        content: '';
+        position: absolute;
+        width: 24px;
+        height: 5px;
+        left: 0;
+        top: 0;
+        background: white;
+        transform: rotate(45deg);
     }
     
-    .main-header__open-menu {
-        display: none;
+    &::after {
+        content: '';
+        position: absolute;
+        width: 24px;
+        height: 5px;
+        left: 0;
+        top: 0;
+        background: white;
+        transform: rotate(-45deg);
     }
+}
 
+.logo-abs {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+.logo {
+    position: relative;
+//    top: 0;
+    
+}
+
+.logo-wraper {
+    align-self: center;
+    position: relative;
+    min-height: 56px;
+    width: 31.875%;
+    display: flex;
 }

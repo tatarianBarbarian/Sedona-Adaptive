@@ -8,7 +8,6 @@
   line-height: 26px;
   font-weight: bold;
   text-transform: uppercase;
-  max-width: 260px;
   margin: 0 auto; }
 
 .heading-paragraph__heading--big-heading {
@@ -31,14 +30,12 @@
 
 @media only screen and (min-width: 768px) {
   .heading-paragraph {
-    padding: 30px 50px; }
+    padding: 1m 1.5em; }
   .heading-paragraph__heading {
-    max-width: 445px;
     font-size: 21px; }
   .heading-paragraph__heading--big-heading {
     font-size: 30px; }
   .heading-paragraph__paragraph {
-    max-width: 165px;
     margin: 30px auto; }
   .heading-paragraph--align-left {
     text-align: center; }

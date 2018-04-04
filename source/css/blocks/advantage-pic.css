@@ -1,6 +1,16 @@
 .advantage-pic {
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  width: 100%; }
+
+.advantage-pic__wraper {
+  background-size: cover;
+  width: 100%;
+  min-height: 200px; }
+
+.advantage-pic__wraper--city {
+  background: url(../img/photo-city.jpg) no-repeat;
+  background-position: center right; }
 
 .advantage-pic--blue-bg {
   background: #81b3d2; }
@@ -9,4 +19,6 @@
   .advantage-pic {
     flex-direction: row; }
   .advantage-pic--reverse {
-    flex-direction: row-reverse; } }
+    flex-direction: row-reverse; }
+  .advantage-pic__text {
+    max-width: 33%; } }

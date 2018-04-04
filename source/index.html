@@ -7,35 +7,19 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header class="main-header container">
+    <header class="main-header">
         <nav class="main-nav">
-            <ul class="main-nav__list">
-               <div class="main-nav__list-item-wrapper main-nav__list-item-wrapper--left">
-                   <li class="main-nav__list-item">
-                       <a href="#" class="main-nav__menu-link">Главная</a>
-                       <button class="main-nav__close-menu"><span class="visually-hidden">Закрыть меню</span></button>
-                   </li>
-                    <li class="main-nav__list-item">
-                        <a href="#" class="main-nav__menu-link">Фото и видео</a>
-                    </li>
-               </div>
-                <li class="main-nav__list-item pc-logo">
-                    </li>
-                <div class="main-nav__list-item-wrapper">
-                    
-                    <li class="main-nav__list-item">
-                    <a href="#" class="main-nav__menu-link">Форма отзыва</a>
-                    </li>
-                    <li class="main-nav__list-item">
-                    <a href="#" class="main-nav__menu-link">HTML Academy</a>
-                    </li>
-                </div>    
-                
-            </ul>
+            <a href="#" class="main-nav__menu-item">Главная
+            <button class="main-header__close-menu"><span class="visually-hidden">Закрыть меню</span></button></a>
+            <a href="#" class="main-nav__menu-item">Фото и видео</a>    
+            <a href="#" class="main-nav__menu-item">Форма отзыва</a>
+            <a href="#" class="main-nav__menu-item">HTML Academy</a>  
         </nav>
-        <div class="main-header__button-logo-wrapper">
-               <img src="img/svg/logotyle-mobile.png" alt="мобильное лого" class="mobile-logo">
-            <button class="main-header__open-menu"><span class="visually-hidden">Открыть меню</span></button>
+        <button class="main-header__open-menu"><span class="visually-hidden">Открыть меню</span></button>
+        <div class="logo-wraper">
+            <div class="logo-abs">
+                 <img class="logo" src="../source/img/svg/logotyle-mobile.png" alt="">
+            </div>
         </div>
     </header>
     <main class="container">
@@ -47,16 +31,16 @@
             </div>
         </section>
         <section class="advantages">
-            <div class="advantage-pic advantage-pic--blue-bg">
-                <div class="advantage-pic__text">
+            <div class="advantage-pic ">
+                <div class="advantage-pic__text advantage-pic--blue-bg">
                    <div class="heading-paragraph heading-paragraph--white">
                         <h1 class="heading-paragraph__heading">Настоящий<span class="tablet-break"><br></span> городок</h1>
                         <p class="heading-paragraph__paragraph">- №1 -</p>
                         <p class="heading-paragraph__paragraph">Седона - не аттракцион для туристов, там течёт своя жизнь</p>
                     </div>
                 </div>
-                <div class="advantage-pic__wraper">
-                    <img src="" alt="Городок живёт" class="advantage-pic__image" />
+                <div class="advantage-pic__wraper advantage-pic__wraper--city">
+                    
                 </div>
             </div>
             <div class="features">
@@ -87,8 +71,8 @@
                         <p class="heading-paragraph__paragraph">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
                     </div>
                 </div>
-                <div class="advantage-pic__wraper">
-                    <img src="" alt="Мост дьявола" class="advantage-pic__image" />
+                <div class="advantage-pic__wraper advantage-pic__wraper--devil-bridge">
+                    
                 </div>
             </div>
             <div class="nopic-advantages">
