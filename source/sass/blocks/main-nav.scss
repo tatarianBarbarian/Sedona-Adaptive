@@ -73,13 +73,13 @@
     .main-nav__items-wraper {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
     }
     
     .main-nav__items-wraper--left {
         width: 30.5989583333%;
-        margin-left: 1em;
+        margin-left: 2em;
     }
     
     .main-nav__items-wraper--right {
