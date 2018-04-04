@@ -41,6 +41,7 @@
     min-height: 24px;
     background: none;
     border: none;
+    cursor: pointer;
     
     &::before {
         content: '';
@@ -85,4 +86,25 @@
     min-height: 56px;
     width: 31.875%;
     display: flex;
+    order: 3;
+}
+
+
+
+@media (min-width: $tablet-width) {
+
+    
+    .main-header__close-menu {
+        display: none;
+    }
+    
+    .main-header__open-menu {
+        display: none;
+    }
+    
+    
+    .logo-wraper {
+        order: 2;
+        width: 13.28125%;
+    }
 }

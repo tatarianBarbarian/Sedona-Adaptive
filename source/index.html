@@ -8,19 +8,24 @@
 </head>
 <body>
     <header class="main-header">
-        <nav class="main-nav">
-            <a href="#" class="main-nav__menu-item">Главная
-            <button class="main-header__close-menu"><span class="visually-hidden">Закрыть меню</span></button></a>
-            <a href="#" class="main-nav__menu-item">Фото и видео</a>    
-            <a href="#" class="main-nav__menu-item">Форма отзыва</a>
-            <a href="#" class="main-nav__menu-item">HTML Academy</a>  
-        </nav>
-        <button class="main-header__open-menu"><span class="visually-hidden">Открыть меню</span></button>
-        <div class="logo-wraper">
-            <div class="logo-abs">
-                 <img class="logo" src="../source/img/svg/logotyle-mobile.png" alt="">
+        <nav id="header-menu" class="main-nav main-nav--no-js">
+           <div class="main-nav__items-wraper main-nav__items-wraper--left main-nav--no-js">
+               <a class="main-nav__menu-item main-nav__menu-item--active">Главная
+            <button id="js-menu-close" class="main-header__close-menu"><span class="visually-hidden">Закрыть меню</span></button></a>
+                <a href="#" class="main-nav__menu-item">Фото и видео</a>
+           </div>
+            <div class="logo-wraper">
+                <div class="logo-abs">
+                     <img class="logo" src="../source/img/svg/logotyle-mobile.png" alt="Логотип">
+                </div>
             </div>
-        </div>
+            <div class="main-nav__items-wraper main-nav__items-wraper--right main-nav--no-js">
+                <a href="#" class="main-nav__menu-item">Форма отзыва</a>
+                <a href="#" class="main-nav__menu-item">HTML Academy</a>
+            </div>  
+        </nav>
+        <button id="js-menu-open" class="main-header__open-menu"><span class="visually-hidden">Открыть меню</span></button>
+        
     </header>
     <main class="container">
         <header class="greeting"></header>
@@ -121,5 +126,6 @@
             <a href="#" class="socials__item socials__item--youtube"><span class="visually-hidden">Ютьюб</span></a>
         </div>
     </footer>
+    <script src="js/menu.js"></script>
 </body>
 </html>
