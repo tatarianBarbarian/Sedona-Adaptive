@@ -8,7 +8,8 @@
     background-size: 110% auto,
                      280px auto,
                      768px auto;
-    background-position: center 100.2%, 50% 50%;
+    background-position: center 100.5%, 50% 50%;
+
     
     
 }
@@ -36,7 +37,7 @@
         background-size: 101.5% auto,
                          460px auto,
                          100% auto;
-        background-position: center 100.5%, 50% 50%, center top;
+        background-position: center bottom, 50% 50%, center top;
     }
     
     @media (min-resolution:1.5dppx), (min-resolution: 144dpi) {

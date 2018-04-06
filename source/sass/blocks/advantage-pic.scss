@@ -4,7 +4,7 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    
+    box-sizing: border-box;
 }
 
 .advantage-pic__text {
@@ -13,22 +13,45 @@
 
 .advantage-pic__wraper {
     background-size: cover;
-    width: 100%;
-    min-height: 200px;
+//    width: 100%;
+    min-height: 260px;
+    display: flex;
+    position: relative;
+    overflow: hidden;
 }
 
+//Canonical solution
+
+.advantage-pic__wraper picture {
+    display: flex;
+    margin: 0 auto;
+    position: relative;
+    width: 100%;
+}
+
+.advantage-pic__wraper img {
+    position: absolute;
+    width: 100%;
+}
+
+/////////////
+
+
+//My first solution
+
 .advantage-pic__wraper--city {
-    background: url(../img/photo-city.jpg) no-repeat;
-    background-position: center right;
+//    background: url(../img/main-city-desktop@1x.jpg) no-repeat;
+//    background-position: center right;
 }
 
 .advantage-pic--blue-bg {
     background: $blue-button;
 }
 
-@media only screen and (min-width: 768px) {
+@media (min-width: $tablet-width) {
     .advantage-pic {
         flex-direction: row;
+        justify-content: center;
     }
     
     .advantage-pic--reverse {
@@ -36,6 +59,12 @@
     }
     
     .advantage-pic__text {
-        max-width: 33%;
+        box-sizing: border-box;
+        width: 34%;
     }    
+    
+    .advantage-pic__wraper {
+        box-sizing: border-box;
+        width: 66%;
+    }
 }
