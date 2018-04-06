@@ -5,10 +5,10 @@
     background: url(../img/bg-intro-triangle-mobile.svg) no-repeat,
                 url(../img/text-sedona-index.svg) no-repeat,
                 url(../img/bg-back-mobile@1x.jpg) no-repeat;
-    background-size: 110% auto,
+    background-size: 105% auto,
                      280px auto,
                      768px auto;
-    background-position: center 100.5%, 50% 50%;
+    background-position: center 100%, 50% 50%;
 
     
     
@@ -19,10 +19,10 @@
                 background: url(../img/bg-intro-triangle-mobile.svg) no-repeat,
                 url(../img/text-sedona-index.svg) no-repeat,
                 url(../img/bg-back-mobile@2x.jpg) no-repeat;
-                background-size: 110% auto,
+                background-size: 105% auto,
                      280px auto,
                      768px auto;
-                background-position: center 100.2%, 50% 50%;
+                background-position: center bottom, 50% 50%;
             }
     }
 
@@ -34,7 +34,7 @@
         background: url(../img/bg-intro-triangle-tablet.svg) no-repeat,
                     url(../img/text-sedona-index.svg) no-repeat,
                     url(../img/bg-back-tablet@1x.jpg) no-repeat;
-        background-size: 101.5% auto,
+        background-size: 105% auto,
                          460px auto,
                          100% auto;
         background-position: center bottom, 50% 50%, center top;
@@ -46,10 +46,10 @@
         background: url(../img/bg-intro-triangle-tablet.svg) no-repeat,
                     url(../img/text-sedona-index.svg) no-repeat,
                     url(../img/bg-back-tablet@2x.jpg) no-repeat;
-        background-size: 101.5% auto,
+        background-size: 105% auto,
                          460px auto,
                          100% auto;
-        background-position: center 100.5%, 50% 50%, center top;
+        background-position: center 100%, 50% 50%, center top;
     }
 }
 }
@@ -61,10 +61,10 @@
         background: url(../img/bg-intro-triangle-desktop.svg) no-repeat,
                     url(../img/text-sedona-index.svg) no-repeat,
                     url(../img/bg-back-desktop@1x.jpg) no-repeat;
-        background-size: 101.5% auto,
+        background-size: 105% auto,
                          460px auto,
                          100% auto;
-        background-position: center 100.5%, 50% 50%, center top;
+        background-position: center 100%, 50% 50%, center top;
     }
     
     @media (min-resolution:1.5dppx), (min-resolution: 144dpi) {
@@ -73,10 +73,10 @@
         background: url(../img/bg-intro-triangle-desktop.svg) no-repeat,
                     url(../img/text-sedona-index.svg) no-repeat,
                     url(../img/bg-back-desktop@2x.jpg) no-repeat;
-        background-size: 101.5% auto,
+        background-size: 105% auto,
                          460px auto,
                          100% auto;
-        background-position: center 100.5%, 50% 50%, center top;
+        background-position: center 100%, 50% 50%, center top;
     }
 }
 }
