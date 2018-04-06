@@ -1,0 +1,21 @@
+.feature-item {
+    position: relative;
+    width: 65.625%;
+    margin: 0 auto;
+//    padding-top: 4em;
+}
+
+.feature-item::before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 38px;
+    left: -40px;
+    top: 25px;
+}
+
+.feature-item--home::before {
+    background: url(../img/icon-house.svg) no-repeat;
+    background-size: cover;
+}

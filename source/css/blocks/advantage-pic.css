@@ -4,6 +4,13 @@
   width: 100%;
   box-sizing: border-box; }
 
+.advantage-pic--triangle {
+  background-image: url(../img/bg-triangle.svg);
+  background-repeat: no-repeat;
+  background-position: center 0;
+  background-size: 100% auto;
+  padding-top: 15vw; }
+
 .advantage-pic__wraper {
   background-size: cover;
   min-height: 260px;
@@ -22,12 +29,15 @@
   width: 100%; }
 
 .advantage-pic--blue-bg {
-  background: #81b3d2; }
+  background-color: #81b3d2; }
 
 @media (min-width: 768px) {
   .advantage-pic {
     flex-direction: row;
     justify-content: center; }
+  .advantage-pic--triangle {
+    background-image: none;
+    padding: 0; }
   .advantage-pic--reverse {
     flex-direction: row-reverse; }
   .advantage-pic__text {
