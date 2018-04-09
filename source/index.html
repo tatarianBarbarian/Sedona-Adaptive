@@ -18,8 +18,8 @@
                 <div class="logo-abs">
                     <picture>
                        <source class="logo"
-                         srcset="img/svg/logotype-desktop.png" media="(min-width: 1200px)">
-                        <img class="logo" src="img/svg/logotyle-mobile.png" alt="Логотип">
+                         srcset="img/svg/logo-desktop.svg" media="(min-width: 1200px)">
+                        <img class="logo" src="img/svg/logo-devices.svg" alt="Логотип">
                     </picture>
                 </div>
             </div>
@@ -60,18 +60,27 @@
             </div>
             <div class="features">
                 <div class="feature-item feature-item--home">
+                   <svg class="feature-item__icon">
+                        <use href="img/svg/sprite.svg#icon-house-desktop"></use>
+                    </svg>
                    <div class="heading-paragraph heading-paragraph--features heading-paragraph--align-left">
                         <h1 class="heading-paragraph__heading">Жилье</h1>
                         <p class="heading-paragraph__paragraph">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
                     </div>
                 </div>
                 <div class="feature-item feature-item--food">
+                  <svg class="feature-item__icon">
+                        <use href="img/svg/sprite.svg#icon-burger-desktop"></use>
+                    </svg>
                    <div class="heading-paragraph heading-paragraph--features heading-paragraph--align-left">
                         <h1 class="heading-paragraph__heading">Еда</h1>
                         <p class="heading-paragraph__paragraph">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
                     </div>
                 </div>
                 <div class="feature-item feature-item--souvenir">
+                  <svg class="feature-item__icon">
+                        <use href="img/svg/sprite.svg#icon-present-desktop"></use>
+                    </svg>
                    <div class="heading-paragraph heading-paragraph--features heading-paragraph--align-left">
                         <h1 class="heading-paragraph__heading">Сувениры</h1>
                         <p class="heading-paragraph__paragraph">Не только китайского, но и местного производства!</p>
@@ -131,6 +140,33 @@
         </section>
         <section class="map">
             <h1 class="visually-hidden">Здесь представлена карта, где можно посмотреть город.</h1>
+            <div id="map"></div>
+            <script>
+              function initMap() {
+                var uluru = {lat: 34.8714869, lng: -111.7998168};
+                var map = new google.maps.Map(document.getElementById('map'), {
+                  zoom: 9,
+                  center: uluru
+                });
+//                var marker = new google.maps.Marker({
+//                  position: uluru,
+//                  map: map
+//                });
+                var marker = new google.maps.Marker({
+	position: {lat: 34.7714869, lng: -111.6998168},
+	map: map,
+	title: 'Legalizuem.ru',
+	icon: {
+		url: "img/svg/map-marker.svg",
+		scaledSize: new google.maps.Size(64, 64)
+	}
+});
+              }
+            </script>
+            <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAHA7DJ1r8qDuyIYI33lp9zzB3luMzqzLA&callback=initMap">
+            </script>
+
         </section>
     </main>
     <footer class="container main-footer">

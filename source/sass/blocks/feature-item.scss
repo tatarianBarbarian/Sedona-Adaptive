@@ -5,17 +5,29 @@
 //    padding-top: 4em;
 }
 
-.feature-item::before {
-    content: '';
+.feature-item__icon {
+    width: 42px;
     position: absolute;
-    display: block;
-    width: 40px;
-    height: 38px;
-    left: -40px;
-    top: 25px;
+    fill: $blue-button;
+    left: -45px;
+    top: -35px;
 }
 
-.feature-item--home::before {
-    background: url(../img/icon-house.svg) no-repeat;
-    background-size: cover;
+@media (min-width: $tablet-width) {
+    .feature-item {
+        padding-top: 60px;
+        padding-bottom: 65px;
+        text-align: center;
+    }
+    
+    .feature-item__icon {
+        width: 76px;
+        height: 75px;
+        position: static;
+        text-align: center;
+    }
+}
+
+@media (min-width: $desktop-width) {
+    padding-bottom: 85px;
 }
