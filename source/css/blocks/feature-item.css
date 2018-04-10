@@ -1,0 +1,25 @@
+.feature-item {
+  position: relative;
+  width: 65.625%;
+  margin: 0 auto; }
+
+.feature-item__icon {
+  width: 42px;
+  position: absolute;
+  fill: #81b3d2;
+  left: -45px;
+  top: -35px; }
+
+@media (min-width: 768px) {
+  .feature-item {
+    padding-top: 60px;
+    padding-bottom: 65px;
+    text-align: center; }
+  .feature-item__icon {
+    width: 76px;
+    height: 75px;
+    position: static;
+    text-align: center; } }
+
+@media (min-width: 1200px) {
+  padding-bottom: 85px; }

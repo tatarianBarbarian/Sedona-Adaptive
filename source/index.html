@@ -143,19 +143,16 @@
             <div id="map"></div>
             <script>
               function initMap() {
-                var uluru = {lat: 34.8714869, lng: -111.7998168};
+                var uluru = {lat: 34.3714869, lng: -111.5998168};
                 var map = new google.maps.Map(document.getElementById('map'), {
-                  zoom: 9,
-                  center: uluru
+                  zoom: 7,
+                  center: uluru,
+                  disableDefaultUI: true
                 });
-//                var marker = new google.maps.Marker({
-//                  position: uluru,
-//                  map: map
-//                });
                 var marker = new google.maps.Marker({
-	position: {lat: 34.7714869, lng: -111.6998168},
+	position: {lat: 34.3714869, lng: -111.5998168},
 	map: map,
-	title: 'Legalizuem.ru',
+	title: 'Sedona',
 	icon: {
 		url: "img/svg/map-marker.svg",
 		scaledSize: new google.maps.Size(64, 64)
@@ -170,13 +167,31 @@
         </section>
     </main>
     <footer class="container main-footer">
-        <b class="hashtag">#VISITSEDONA</b>
+        <b class="footer__hashtag">#VISITSEDONA</b>
         <h1 class="visually-hidden">Подписывайтесь на нас в социальных сетях:</h1>
         <div class="socials">
-            <a href="#" class="socials__item socials__item--twitter"><span class="visually-hidden">Твиттер</span></a>
-            <a href="#" class="socials__item socials__item--facebook"><span class="visually-hidden">Фейсбук</span></a>
-            <a href="#" class="socials__item socials__item--youtube"><span class="visually-hidden">Ютьюб</span></a>
+            <a href="#" class="socials__item">
+                <svg class="socials__icon" width="19" >
+                        <use href="img/svg/sprite.svg#icon-twitter"></use>
+                </svg>
+                <span class="visually-hidden">Твиттер</span>
+            </a>
+            <a href="#" class="socials__item">
+                <svg class="socials__icon" width="9" heght="19">
+                        <use href="img/svg/sprite.svg#icon-facebook"></use>
+                </svg>
+                <span class="visually-hidden">Фейсбук</span>
+            </a>
+            <a href="#" class="socials__item">
+                <svg class="socials__icon" width="20">
+                        <use href="img/svg/sprite.svg#icon-youtube"></use>
+                </svg>
+                <span class="visually-hidden">Ютьюб</span>
+            </a>
         </div>
+        <p class="main-footer__madeby">Разработано   <svg class="main-footer__htmlacademy-logo" width="20">
+                        <use href="img/svg/sprite.svg#htmlacademy-logo"></use>
+                </svg></p>
     </footer>
     <script src="js/menu.js"></script>
 </body>

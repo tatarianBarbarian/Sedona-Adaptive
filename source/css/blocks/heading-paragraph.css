@@ -36,7 +36,8 @@
   .heading-paragraph__heading--big-heading {
     font-size: 30px; }
   .heading-paragraph__paragraph {
-    margin: 30px auto; }
+    margin: 0 auto;
+    margin-top: 30px; }
   .heading-paragraph--align-left {
     text-align: center; }
   .heading-paragraph__paragraph--long {
