@@ -1,0 +1,149 @@
+@import '../variables';
+
+textarea {
+    resize: none;
+}
+
+.feedback-form {
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.form__fieldset {
+    border: none;
+//    text-align: center;
+    padding: 0;
+    margin: 0;
+    border-bottom: 1px solid #e5e5e5;
+    padding-bottom: 20px;
+}
+
+.form__legend {
+    font-weight: bold;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-top: 24px;
+    margin-bottom: 24px;
+    width:  calc(100% - 40px);
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+.form__label {
+    text-transform: uppercase;
+    margin-right: 20px;
+    position: relative;
+}
+
+.form__label--contacts {
+    padding-left: 20px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.form__input-text {
+    border: none;
+    background: $input;
+    padding: 20px 0 20px 20px;
+    font-weight: bold;
+    flex-grow: 1;
+    
+    box-sizing: border-box;
+    min-width: 0;
+//    width: 100%;
+}
+
+.form__input-text::placeholder {
+    color: black;
+    opacity: 1;
+}
+
+.form__input-text-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: calc(100% - 20px);
+}
+
+
+.form__contacts-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.form__input-radio-wrapper {
+    display: flex;
+    margin-bottom: 40px;
+}
+
+.form__input-radio {
+    display: none;
+}
+
+.form__input-radio ~ label {
+    padding-left: 60px;
+    font-weight: bold;
+}
+
+
+.form__input-radio ~ label::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border: 18px solid $input;
+    border-radius: 50%;
+    background: $input;
+    left: -5px;
+    top: -20px;
+}
+
+.form__input-radio:checked ~ label::before {
+    background: #333333;
+}
+
+
+.form__input-checkbox-wrapper {
+    display: flex;
+    margin-bottom: 55px;
+}
+
+.form__input-checkbox {
+    display: none;
+}
+
+.form__input-checkbox ~ label {
+    font-weight: bold;
+    padding-left: 75px;
+}
+
+.form__input-checkbox ~ label::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 56px;
+    height: 56px;
+    
+    background-color: $input;
+    border-radius: 5px;
+    left: 0;
+    top: -15px;
+}
+
+.form__input-checkbox:checked ~ label::before {
+    background: $input url(../img/svg/tick.svg) no-repeat;
+    background-position: 50% 45%;
+}
+
+@media (min-width: $tablet-width) {
+    .form__wrapper{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .form__fieldset {
+        width: calc(50% - 40px;)
+    }
+}
