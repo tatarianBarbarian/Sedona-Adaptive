@@ -2,6 +2,7 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Sedona - Форма</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -41,7 +42,7 @@
         <section class="feedback-form">
             <form action="https://echo.htmlacademy.ru" class="form" method="post">
                 <div class="form__wrapper">
-                    <fieldset class="form__fieldset">
+                    <fieldset class="form__fieldset form__fieldset--name">
                         <legend class="form__legend">Представьтесь:</legend>
                         <div class="form__input-text-wrapper">
                             <label for="name" class="form__label">Имя*:</label>
@@ -58,34 +59,40 @@
                             <input class="form__input-text" type="text" name="thirdName" id="thirdName" placeholder="Александрович">
                         </div>
                     </fieldset>
-                    <fieldset class="form__fieldset">
-                        <legend class="form__legend">Контактная информация</legend>
+                    <fieldset class="form__fieldset form__fieldset--contacts">
+                        <legend class="form__legend"><span class="form__legend--sticks">Контактная информация</span></legend>
                         <div class="form__contacts-wrapper">
                             <label for="phone" class="form__label form__label--contacts">Контактный телефон*:</label>
-                            <input type="tel" name="phone" id="phone" class="form__input-text" placeholder="Введите телефон" required>
+                            <div class="form__contacts-input-container form__contacts-input-container--phone">
+                                <input type="tel" name="phone" id="phone" class="form__input-text form__input-text--contacts" placeholder="Введите телефон" required>
+                            </div>
                         </div>
                         <div class="form__contacts-wrapper">
                             <label for="email" class="form__label form__label--contacts">Электронная почта*:</label>
-                            <input type="email" name="email" id="email" class="form__input-text" placeholder="Введите e-mail" required>
+                            <div class="form__contacts-input-container form__contacts-input-container--mail">
+                                <input type="email" name="email" id="email" class="form__input-text form__input-text--contacts" placeholder="Введите e-mail" required>
+                            </div>
                         </div>
                     </fieldset>
-                    <fieldset class="form__fieldset">
+                    <fieldset class="form__fieldset form__fieldset--impressions">
                         <legend class="form__legend">Ваше общее впечатление:</legend>
-                        <div class="form__input-radio-wrapper">
-                            <input type="radio" name="impression" id="positive" value="positive" class="form__input-radio" checked>
-                            <label for="positive" class="form__label">Скорее положительное</label>
-                        </div>
-                        <div class="form__input-radio-wrapper">
-                            <input type="radio" name="impression" id="negative" value="negative" class="form__input-radio">
-                            <label for="negative" class="form__label">Скорее отрицательное</label>
-                        </div>
-                        <div class="form__input-radio-wrapper">
-                             <input type="radio" name="impression" id="neutral" value="neutral" class="form__input-radio">
-                            <label for="neutral" class="form__label">Затрудняюсь ответить</label>
+                        <div class="form__flexible-fieldset">
+                            <div class="form__input-radio-wrapper">
+                                <input type="radio" name="impression" id="positive" value="positive" class="form__input-radio" checked>
+                                <label for="positive" class="form__label">Скорее положительное</label>
+                            </div>
+                            <div class="form__input-radio-wrapper">
+                                <input type="radio" name="impression" id="negative" value="negative" class="form__input-radio">
+                                <label for="negative" class="form__label">Скорее отрицательное</label>
+                            </div>
+                            <div class="form__input-radio-wrapper">
+                                 <input type="radio" name="impression" id="neutral" value="neutral" class="form__input-radio">
+                                <label for="neutral" class="form__label">Затрудняюсь ответить</label>
+                            </div>
                         </div>
                     </fieldset>
-                    <fieldset class="form__fieldset">
-                        <legend class="form__legend">Посещённые достопримечательности:</legend>
+                    <fieldset class="form__fieldset form__fieldset--sights">
+                        <legend class="form__legend"><span class="form__legend--sticks">Посещённые достопримечательности:</span></legend>
                        <div class="form__input-checkbox-wrapper">
                        <input type="checkbox" name="Bridge" id="DevilBridge" class="form__input-checkbox" checked>
                        <label for="DevilBridge" class="form__label">Мост Дьявола</label>
@@ -103,13 +110,13 @@
                        <label for="RedCliffs" class="form__label">Красные скалы</label>
                        </div>
                     </fieldset>
-                    <fieldset class="form__delights">
-                        <legend class="form__legend">Опишите свои эмоции:</legend>
+                    <fieldset class="form__fieldset form__fieldset--emotions">
+                        <legend class="form__legend"><span class="form__legend--sticks">Опишите свои эмоции:</span></legend>
                         <textarea placeholder="Опишите подробно все свои восторги"></textarea>
                     </fieldset>
                     <div class="button-text">
                         <button type="submit" class="button">Отправить отзыв</button>
-                        <paragraph class="hint">-* Обязательные поля</paragraph>
+                        <p class="hint">-* Обязательные поля</p>
                     </div>
                 </div>
             </form>
@@ -155,7 +162,7 @@
             <h1 class="heading-paragraph__heading">Что-то пошло не так!</h1>
             <p class="heading-paragraph__paragraph">Проверьте поля, выделенные красным, скорее всего, вы забыли их заполнить</p>
         </div>
-        <button class="buttton">Ok</button>
+        <button class="button">Ok</button>
     </section>
     <script src="js/menu.js"></script>
     </body>
