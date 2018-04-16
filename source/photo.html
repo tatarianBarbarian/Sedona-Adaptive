@@ -2,63 +2,128 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Sedona - Photo</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-     <header class="container">
-       <img src="" alt="лого" class="logo-image">
-        <nav class="main-nav">
-           <button class="close-menu"><span class="visually-hidden">Закрыть меню</span></button>
-            <ul class="main-nav__list">
-                <li class="main-nav__list-item">Главная</li>
-                <li class="main-nav__list-item">Фото и видео</li>
-                <li class="main-nav__list-item">Форма отзыва</li>
-                <li class="main-nav__list-item">HTML Academy</li>
-            </ul>
+     <header class="main-header">
+        <nav id="header-menu" class="main-nav main-nav--no-js">
+           <div class="main-nav__items-wraper main-nav__items-wraper--left main-nav--no-js">
+               <a href="index.html" class="main-nav__menu-item">Главная
+            <button id="js-menu-close" class="main-header__close-menu"><span class="visually-hidden">Закрыть меню</span></button></a>
+                <a href="#" class="main-nav__menu-item">Фото и видео</a>
+           </div>
+            <div class="logo-wraper">
+                <div class="logo-abs">
+                    <picture>
+                       <source class="logo"
+                         srcset="img/svg/logo-desktop.svg" media="(min-width: 1200px)">
+                        <img class="logo" src="img/svg/logo-devices.svg" alt="Логотип">
+                    </picture>
+                </div>
+            </div>
+            <div class="main-nav__items-wraper main-nav__items-wraper--right main-nav--no-js">
+                <a href="#" class="main-nav__menu-item main-nav__menu-item--active">Форма отзыва</a>
+                <a href="#" class="main-nav__menu-item">HTML Academy</a>
+            </div>  
         </nav>
-        <button class="open-menu"><span class="visually-hidden">Открыть меню</span></button>
+        <button id="js-menu-open" class="main-header__open-menu"><span class="visually-hidden">Открыть меню</span></button>
+        
     </header>
     <main class="container">
-        <header class="intro">
+        <header class="secondary-greeting"></header>
+        <section class="intro intro--secondary">
            <div class="heading-paragraph">
-                <h1 class="heading-paragraph__heading heading-paragraph__heading--big-heading">Фото и видео</h1>
-                <p class="heading-paragraph__paragraph">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике</p>
+                <h1 class="heading-paragraph__heading">Фото и видео</h1>
+                <p class="heading-paragraph__paragraph">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещённых вами достопримечательностях</p>
             </div>
-        </header>
+        </section>
         <section class="photogallery">
-            <div class="photo-item">
-                <img src="" alt="Неродные просторы" class="photo-item__image" />
-                <div class="photo-item__description">
-                    <h2 class="photo-item__name">Неродные просторы</h2>
-                    <p class="photo-item__author">Автор фото: Борис</p>
-                    <span class="photo-item__likes">1350</span>
+            <figure class="photo-item photo-item--wide">
+               <picture class="photo-item__image">
+                   <source srcset="img/photo-sunset-desktop@1x.jpg 1x,
+                                   img/photo-sunset-desktop@2x.jpg 2x" media="(min-width: 1200px)">
+                   <source srcset="img/photo-sunset-tablet@1x.jpg 1x,
+                                   img/photo-sunset-tablet@2x.jpg 2x" media="(min-width: 768px)">
+                   <img srcset="img/photo-sunset-mobile@1x.jpg 1x,
+                                img/photo-sunset-mobile@2x.jpg 2x" alt="Неродные просторы">
+               </picture>
+               <div class="photo-item__description-wrapper">
+                    <figcaption class="photo-item__description">   
+                        <div class="photo-item__name-author">
+                            <h4 class="photo-item__name">Неродные просторы</h4>
+                            <p class="photo-item__author">Автор фото: Борис</p>
+                        </div>
+                        <div class="photo-item__likes">
+                            <button class="photo-item__like-button"><span class="visually-hidden">Мне нравится</span></button><span>1350</span>
+                        </div>
+                    </figcaption>
                 </div>
-            </div>
-            <div class="photo-item">
-                <img src="" alt="Местная растительность" class="photo-item__image" />
-                <div class="photo-item__description">
-                    <h2 class="photo-item__name">Местная растительность</h2>
-                    <p class="photo-item__author">Автор фото: Сергей</p>
-                    <span class="photo-item__likes">145</span>
+            </figure>
+            <figure class="photo-item">
+               <picture class="photo-item__image">
+                   <source srcset="img/photo-cactus-desktop@1x.jpg 1x,
+                                   img/photo-cactus-desktop@2x.jpg 2x" media="(min-width: 1200px)">
+                   <source srcset="img/photo-cactus-tablet@1x.jpg 1x,
+                                   img/photo-cactus-tablet@2x.jpg 2x" media="(min-width: 768px)">
+                   <img srcset="img/photo-cactus-mobile@1x.jpg 1x,
+                                img/photo-cactus-mobile@2x.jpg 2x" alt="Местная растительность">
+               </picture>
+               <div class="photo-item__description-wrapper">
+                    <figcaption class="photo-item__description">   
+                        <div class="photo-item__name-author">
+                            <h4 class="photo-item__name">Местная растительность</h4>
+                            <p class="photo-item__author">Автор фото: Сергей</p>
+                        </div>
+                        <div class="photo-item__likes">
+                            <button class="photo-item__like-button"><span class="visually-hidden">Мне нравится</span></button><span>143</span>
+                        </div>
+                    </figcaption>
                 </div>
-            </div>
-            <div class="photo-item">
-                <img src="" alt="Дорога на север" class="photo-item__image" />
-                <div class="photo-item__description">
-                    <h2 class="photo-item__name">Дорога на север</h2>
-                    <p class="photo-item__author">Автор фото: Петр</p>
-                    <span class="photo-item__likes">96</span>
+            </figure>
+            <figure class="photo-item">
+               <picture class="photo-item__image">
+                   <source srcset="img/photo-roads-desktop@1x.jpg 1x,
+                                   img/photo-roads-desktop@2x.jpg 2x" media="(min-width: 1200px)">
+                   <source srcset="img/photo-roads-tablet@1x.jpg 1x,
+                                   img/photo-roads-tablet@2x.jpg 2x" media="(min-width: 768px)">
+                   <img srcset="img/photo-roads-mobile@1x.jpg 1x,
+                                img/photo-roads-mobile@2x.jpg 2x" alt="Дорога на север">
+               </picture>
+               <div class="photo-item__description-wrapper">
+                    <figcaption class="photo-item__description">   
+                        <div class="photo-item__name-author">
+                            <h4 class="photo-item__name">Дорога на север</h4>
+                            <p class="photo-item__author">Автор фото: Петр</p>
+                        </div>
+                        <div class="photo-item__likes">
+                            <button class="photo-item__like-button"><span class="visually-hidden">Мне нравится</span></button><span>96</span>
+                        </div>
+                    </figcaption>
                 </div>
-            </div>
-            <div class="photo-item">
-                <img src="" alt="Мост Дьявола" class="photo-item__image" />
-                <div class="photo-item__description">
-                    <h2 class="photo-item__name">Мост Дьявола</h2>
-                    <p class="photo-item__author">Автор фото: Антон</p>
-                    <span class="photo-item__likes">254</span>
+            </figure>
+            <figure class="photo-item">
+               <picture class="photo-item__image">
+                   <source srcset="img/photo-bridge-desktop@1x.jpg 1x,
+                                   img/photo-bridge-desktop@2x.jpg 2x" media="(min-width: 1200px)">
+                   <source srcset="img/photo-bridge-tablet@1x.jpg 1x,
+                                   img/photo-bridge-tablet@2x.jpg 2x" media="(min-width: 768px)">
+                   <img srcset="img/photo-bridge-mobile@1x.jpg 1x,
+                                img/photo-bridge-mobile@2x.jpg 2x" alt="Мост Дьявола">
+               </picture>
+               <div class="photo-item__description-wrapper">
+                    <figcaption class="photo-item__description">   
+                        <div class="photo-item__name-author">
+                            <h4 class="photo-item__name">Мост Дьявола</h4>
+                            <p class="photo-item__author">Автор фото: Антон</p>
+                        </div>
+                        <div class="photo-item__likes">
+                            <button class="photo-item__like-button"><span class="visually-hidden">Мне нравится</span></button><span>254</span>
+                        </div>
+                    </figcaption>
                 </div>
-            </div>
+            </figure>
         </section>
         <section class="videogallery">
            <header class="video-intro">
@@ -68,18 +133,36 @@
                 </div>
             </header>
             <div class="video-wrapper">
-                <video src="" class="site-video"></video>
+                <video src="img/svg/like.svg" class="site-video"></video>
             </div>
         </section>
     </main>
-    <footer class="container">
-        <b class="hashtag">#VISITSEDONA</b>
+    <footer class="container main-footer">
+        <b class="footer__hashtag">#VISITSEDONA</b>
         <h1 class="visually-hidden">Подписывайтесь на нас в социальных сетях:</h1>
         <div class="socials">
-            <a href="#" class="socials__item socials__item--twitter"><span class="visually-hidden">Твиттер</span></a>
-            <a href="#" class="socials__item socials__item--facebook"><span class="visually-hidden">Фейсбук</span></a>
-            <a href="#" class="socials__item socials__item--youtube"><span class="visually-hidden">Ютьюб</span></a>
+            <a href="#" class="socials__item">
+                <svg class="socials__icon" width="19" >
+                        <use href="img/svg/sprite.svg#icon-twitter"></use>
+                </svg>
+                <span class="visually-hidden">Твиттер</span>
+            </a>
+            <a href="#" class="socials__item">
+                <svg class="socials__icon" width="9" heght="19">
+                        <use href="img/svg/sprite.svg#icon-facebook"></use>
+                </svg>
+                <span class="visually-hidden">Фейсбук</span>
+            </a>
+            <a href="#" class="socials__item">
+                <svg class="socials__icon" width="20">
+                        <use href="img/svg/sprite.svg#icon-youtube"></use>
+                </svg>
+                <span class="visually-hidden">Ютьюб</span>
+            </a>
         </div>
+        <p class="main-footer__madeby">Разработано   <svg class="main-footer__htmlacademy-logo" width="20">
+                        <use href="img/svg/sprite.svg#htmlacademy-logo"></use>
+                </svg></p>
     </footer>
 </body>
 </html>
