@@ -254,6 +254,12 @@ textarea {
         height: 100%;
     }
     
+    .form__flexible-fieldset--places {
+        flex-wrap: wrap;
+        align-content: center;
+        height: 150px;
+    } 
+    
     .form__fieldset--sights {
         order: 4;
         width: 100%;
@@ -262,6 +268,10 @@ textarea {
         align-content: space-evenly;
         max-height: 250px;
         flex-wrap: wrap;
+    }
+    
+    .form__input-checkbox-wrapper {
+        width: 40%;
     }
     
     .form__fieldset--emotions {
@@ -303,5 +313,9 @@ textarea {
             margin-left: 60px;
         }
     }
+    
+}
+
+@media (min-width: $desktop-width) {
     
 }
