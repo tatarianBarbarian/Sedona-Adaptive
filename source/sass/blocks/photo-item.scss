@@ -23,14 +23,14 @@
     font-size: 14px;
     margin: 0;
     padding: 0;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
 .photo-item__author {
     font-size: 14px;
     margin: 0;
     padding: 0;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
 .photo-item__likes {
@@ -84,7 +84,8 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 5px 10px;
+        padding: 10px 10px;
+        background-color: #f2f2f2;
     }
 }
 
@@ -108,5 +109,11 @@
         width: calc(100% - 20px);
         background-color: rgba(0,0,0,0.3);
         color: white;
+    }
+    
+    .photo-item__like-button {
+        background: url(../img/svg/like-desktop.svg) no-repeat;
+        background-position: 60% center;
+
     }
 }
