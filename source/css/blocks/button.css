@@ -16,4 +16,7 @@
 
 @media only screen and (min-width: 768px) {
   .button {
-    width: 45%; } }
+    width: 45%; }
+  .button--submit-form {
+    margin: 0;
+    width: 50%; } }

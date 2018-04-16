@@ -61,6 +61,17 @@ textarea {
     opacity: 1;
 }
 
+.form__input-text:hover {
+    background: $input-hover;
+}
+
+.form__input-text:focus {
+    background: none;
+    outline: 4px solid $input;
+}
+
+
+
 .form__input-text-wrapper {
     display: flex;
     align-items: center;
@@ -87,7 +98,7 @@ textarea {
     position: absolute;
     display: block;
     width: 58px;
-    height: 58px;
+    height: 60px;
     background: #e6e6e6;
     right: 0;
 }
@@ -126,16 +137,33 @@ textarea {
     position: absolute;
     width: 20px;
     height: 20px;
-    border: 18px solid $input;
+    border: 18px solid $radiocheckbox;
     border-radius: 50%;
     background: $input;
     left: -5px;
     top: -20px;
 }
 
+.form__input-radio ~ label:hover::before {
+    border-color: $radiocheckbox-hover;
+    background: $radiocheckbox-hover;
+}
+
+.form__input-radio ~ label:active::before {
+    background: $radiocheckbox-down;
+    color: #d5d5d5;
+}
+
 .form__input-radio:checked ~ label::before {
     background: #333333;
 }
+
+.form__input-radio:checked ~ label:active::before {
+    border-color: $radiocheckbox-down;
+    background: #a4a4a4;
+    
+}
+
 
 //checkboxes
 
@@ -160,14 +188,29 @@ textarea {
     width: 56px;
     height: 56px;
     
-    background-color: $input;
+    background-color: $radiocheckbox;
     border-radius: 5px;
     left: 0;
     top: -15px;
 }
 
+
+
 .form__input-checkbox:checked ~ label::before {
     background: $input url(../img/svg/tick.svg) no-repeat;
+    background-position: 50% 45%;
+}
+
+.form__input-checkbox ~ label:hover::before {
+    background-color: $radiocheckbox-hover;
+}
+
+.form__input-checkbox ~ label:active::before {
+    background-color: $radiocheckbox-down;
+}
+
+.form__input-checkbox:checked ~ label:active::before {
+    background: $radiocheckbox-down url(../img/svg/tick_down.svg) no-repeat;
     background-position: 50% 45%;
 }
 
@@ -193,10 +236,10 @@ textarea {
     color: black;
 }
 
-.button-text {
+.form__button-hint {
     display: flex;
     flex-direction: column;
-    padding-bottom: 75px;
+    padding-bottom: 50px;
     margin-top: 50px;
 }
 
@@ -204,6 +247,8 @@ textarea {
     display: none;
 }
 
+
+//***************HERE STARTS THE TABLET!
 @media (min-width: $tablet-width) {
     .feedback-form {
     padding: 0 60px;
@@ -227,9 +272,14 @@ textarea {
 
     }
     
+    
     .form__fieldset--name {      
         order: 2;
-        width: 48%;
+        width: 45%;
+        
+        .form__legend {
+            text-align: left;
+        }
     }
     
     .form__fieldset--contacts {
@@ -244,6 +294,10 @@ textarea {
     .form__fieldset--impressions {
         order: 1;
         width: 48%;
+        
+        .form__legend {
+            text-align: left;
+        }
     }
     
     .form__flexible-fieldset {
@@ -283,11 +337,19 @@ textarea {
         width: 100%;
     }
     
-    .button-text {
-        order: 6;
-        width: 100%;
+     .hint {
+        display: inline-flex;
     }
     
+    .form__button-hint {
+        order: 6;
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    
+   
     
     .form__legend--sticks {
         display: flex;
@@ -317,5 +379,8 @@ textarea {
 }
 
 @media (min-width: $desktop-width) {
-    
+    .form__flexible-fieldset--places {
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
 }

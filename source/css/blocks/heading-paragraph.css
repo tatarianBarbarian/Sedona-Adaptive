@@ -16,8 +16,7 @@
 .heading-paragraph__paragraph {
   font-size: 14px;
   line-height: 21px;
-  text-transform: uppercase;
-  margin: 0; }
+  text-transform: uppercase; }
 
 .heading-paragraph--white {
   color: white; }

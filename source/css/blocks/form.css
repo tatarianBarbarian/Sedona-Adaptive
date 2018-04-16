@@ -47,6 +47,13 @@ textarea {
   color: black;
   opacity: 1; }
 
+.form__input-text:hover {
+  background: #e5e5e5; }
+
+.form__input-text:focus {
+  background: none;
+  outline: 4px solid #f2f2f2; }
+
 .form__input-text-wrapper {
   display: flex;
   align-items: center;
@@ -65,7 +72,7 @@ textarea {
   position: absolute;
   display: block;
   width: 58px;
-  height: 58px;
+  height: 60px;
   background: #e6e6e6;
   right: 0; }
 
@@ -100,8 +107,20 @@ textarea {
   left: -5px;
   top: -20px; }
 
+.form__input-radio ~ label:hover::before {
+  border-color: #e5e5e5;
+  background: #e5e5e5; }
+
+.form__input-radio ~ label:active::before {
+  background: #d5d5d5;
+  color: #d5d5d5; }
+
 .form__input-radio:checked ~ label::before {
   background: #333333; }
+
+.form__input-radio:checked ~ label:active::before {
+  border-color: #d5d5d5;
+  background: #a4a4a4; }
 
 .form__input-checkbox-wrapper {
   display: flex;
@@ -129,6 +148,16 @@ textarea {
   background: #f2f2f2 url(../img/svg/tick.svg) no-repeat;
   background-position: 50% 45%; }
 
+.form__input-checkbox ~ label:hover::before {
+  background-color: #e5e5e5; }
+
+.form__input-checkbox ~ label:active::before {
+  background-color: #d5d5d5; }
+
+.form__input-checkbox:checked ~ label:active::before {
+  background: #d5d5d5 url(../img/svg/tick_down.svg) no-repeat;
+  background-position: 50% 45%; }
+
 .form__fieldset--emotions {
   text-align: center;
   border: none; }
@@ -146,10 +175,10 @@ textarea {
   opacity: 1;
   color: black; }
 
-.button-text {
+.form__button-hint {
   display: flex;
   flex-direction: column;
-  padding-bottom: 75px;
+  padding-bottom: 50px;
   margin-top: 50px; }
 
 .hint {
@@ -169,13 +198,17 @@ textarea {
     padding-top: 60px; }
   .form__fieldset--name {
     order: 2;
-    width: 48%; }
+    width: 45%; }
+    .form__fieldset--name .form__legend {
+      text-align: left; }
   .form__fieldset--contacts {
     order: 3;
     width: 100%; }
   .form__fieldset--impressions {
     order: 1;
     width: 48%; }
+    .form__fieldset--impressions .form__legend {
+      text-align: left; }
   .form__flexible-fieldset {
     display: flex;
     flex-direction: column;
@@ -200,9 +233,13 @@ textarea {
     width: 100%; }
   .form__fieldset--emotions textarea {
     width: 100%; }
-  .button-text {
+  .hint {
+    display: inline-flex; }
+  .form__button-hint {
     order: 6;
-    width: 100%; }
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between; }
   .form__legend--sticks {
     display: flex; }
     .form__legend--sticks::before {
@@ -221,3 +258,8 @@ textarea {
       display: inline-block;
       align-self: center;
       margin-left: 60px; } }
+
+@media (min-width: 1200px) {
+  .form__flexible-fieldset--places {
+    flex-direction: row;
+    flex-wrap: nowrap; } }
