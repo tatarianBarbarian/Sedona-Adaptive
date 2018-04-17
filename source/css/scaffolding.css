@@ -1,0 +1,13 @@
+@import url("https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=cyrillic");
+body {
+  font-family: 'PT Sans', sans-serif; }
+
+main {
+  background: white; }
+
+img {
+  max-width: 100%; }
+
+@media only screen and (min-width: 1200px) {
+  body {
+    background: #f2f2f2; } }
