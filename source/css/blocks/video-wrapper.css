@@ -67,3 +67,16 @@
   position: absolute;
   width: 100%;
   bottom: -41px; }
+
+@media (min-width: 768px) {
+  .site-video__controls {
+    bottom: 41px;
+    background: none; }
+  .site-video__playbutton {
+    background: url(../img/svg/video-play-desktop.svg) no-repeat center; }
+  .site-video__playbutton--play {
+    background: url(../img/svg/video-play-desktop.svg) no-repeat center; }
+  .site-video__playbutton--pause {
+    background: url(../img/svg/video-pause-desktop.svg) no-repeat center; }
+  .site-video__fullscreen-button {
+    background: url(../img/svg/video-fullscreen-desktop.svg) no-repeat center; } }
